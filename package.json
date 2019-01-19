@@ -1,0 +1,12 @@
+{
+  "name": "service-workers-presentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cleaver watch notes.md"
+  },
+  "dependencies": {
+    "cleaver": "^0.8.7"
+  }
+}
