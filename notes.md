@@ -2,7 +2,7 @@ title: Service workers
 author:
   name: Patrick Stockwell
   url: http://deciphr.net
-output: service-workers.html
+output: build/service-workers.html
 controls: false
 
 --

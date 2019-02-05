@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "cleaver watch notes.md"
+    "start": "cleaver watch notes.md",
+    "build": "cleaver notes.md"
   },
   "dependencies": {
     "cleaver": "^0.8.7"
