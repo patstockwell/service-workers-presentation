@@ -12,24 +12,64 @@ controls: false
 
 --
 
-#### What are they?
+#### Imagine...
 
-Service workers are a recent addition to the web specification.
-They're a tool that the browser provides via an API, just like `console.log`, `window`, or `localStorage`.
+Wouldn't it be cool if, as developers, we could instruct browsers to save a copy
+of our website?
 
 --
 
-#### What do they do?
+#### Websites behaving like apps
 
-> _A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction._
+It would work in slow-network and offline environments 🔌
+
+Serving the site from the user's device would mean near-instant load times ⚡️
+
+--
+
+#### What might that look like?
+
+- Website code (`.html`, `.css`, `.js`)
+- Caching/serving instructions (`.js`)
+
+--
+
+#### An example request for your site
+
+- Ask the browser for `www.yoursite.com`
+- Browser checks to see if any 'caching instructions' exist for this site
+- Uses the cache/network to serve assets based on those instructions
+
+--
+
+#### Hello, Service workers!
+
+Service workers allow us to define 'caching instructions' for the browser.
+
+--
+
+#### Hello, Service workers!
+
+Service workers are a recent addition to the web specification.
+They're a tool that the browser provides via an API, just like `console.log`,
+`window`, or `localStorage`.
+
+--
+
+#### What do others say?
+
+> _A service worker is a script that your browser runs in the background,
+separate from a web page, opening the door to features that don't need a web
+page or user interaction._
 
 ###### https://developers.google.com/web/fundamentals/primers/service-workers/
 
 --
 
-#### What do they do?
+#### What do others say?
 
-> _Service workers essentially act as proxy servers that sit between web applications and the network._
+> _Service workers essentially act as proxy servers that sit between web
+applications and the network._
 
 ###### https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 
