@@ -1,7 +1,7 @@
 title: Service workers
 author:
   name: Patrick Stockwell
-  url: http://deciphr.net
+  url: mail@deciphr.net
 output: build/service-workers.html
 controls: false
 
@@ -27,28 +27,13 @@ Serving the site from the user's device would mean near-instant load times ⚡�
 
 --
 
-#### What might that look like?
-
-- Website code (`.html`, `.css`, `.js`)
-- Caching/serving instructions (`.js`)
-
---
-
-#### An example request for your site
-
-- Ask the browser for `www.yoursite.com`
-- Browser checks to see if any 'caching instructions' exist for this site
-- Uses the cache/network to serve assets based on those instructions
-
---
-
-#### Hello, Service workers!
+#### Hullo, Service workers!
 
 Service workers allow us to define 'caching instructions' for the browser.
 
 --
 
-#### Hello, Service workers!
+#### Hullo, Service workers!
 
 Service workers are a recent addition to the web specification.
 They're a tool that the browser provides via an API, just like `console.log`,
@@ -188,10 +173,30 @@ if ('serviceWorker' in navigator) {
 
 --
 
-#### A list of things
+#### Service Worker Lifecycle Events
+_Assuming this is the first visit_
 
-* Item 1
-* Item B
-* Item gamma
+- 🚗 `registration` - Request the SW file.
+- 🚙 `install` - Parsing the SW and caching files begins
+- 🚛 `activate` - Ready to control the in-scope pages
+- ✈️ `fetch` - A Request has been made and passed through the SW
 
-No need for multiple templates!
+--
+
+#### Service Worker Lifecycle Events
+_Assuming you have updated your SW_
+
+- 🚗 `registration` - Request the SW file. (Could be the same name as the old one)
+- 🚙 `install` - Parsing the SW and caching files begins
+- 🚜 `waiting` - Installed successfully but the old SW is still in control
+- 🚛 `activate` - The old SW is no longer controlling any pages and the new one is
+now active.
+- ✈️ `fetch` - A Request has been made and passed through the SW
+
+--
+
+#### Demo
+
+Let's check out some SW code and see it in action 🥊
+
+http://deciphr.net
