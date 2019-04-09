@@ -60,14 +60,14 @@ applications and the network._
 
 --
 
-#### They cache stuff!
-Service workers `===` super fast user experience
-
---
-
 ### My reaction
 
 ![](https://media.giphy.com/media/iAYupOdWXQy5a4nVGk/giphy.gif)
+
+--
+
+#### They cache stuff!
+Service workers `===` super fast user experience
 
 --
 
